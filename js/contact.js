@@ -1,13 +1,5 @@
 $(document).ready(function(){
 
-    const scrollToMap = (()=>{
-      $("#mapButton").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#mapid").offset().top
-        }, 500);
-      });
-    })
-  
     function initMap() {
     console.log("cmon yo")
       var mymap = L.map('mapid').setView([29.79, -98.42], 13);
@@ -24,27 +16,7 @@ $(document).ready(function(){
       var marker = L.marker([29.79, -98.42]).addTo(mymap);
       marker.bindPopup("Centro Armonium -Villamarchante - Valencia").openPopup();
     }
-
-    const initModal = () =>{
-      $("#open-cursos-btn").click(()=>{
-        $('#content-modal').modal()
-        console.log("why u do dis")
-      })
-    }
-  
-    const selectGaleryImages = function () {  
-      $('.galery img').click(function(){
-        window.open($(this)[0].src, '_blank')
-      });
-    }
-
-    const initVideos = function () {
-      
-    }
     
-    /* initMap() */
-    initModal()
-    /* selectGaleryImages() */
-    /* scrollToMap() */
-  
+    initMap()
+
   });
