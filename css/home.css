@@ -85,7 +85,7 @@ body {
 .box-videos .box-item {
   background: #f5f5f5;
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 1.5rem 4rem;
   text-align: center;
 }
 .box-videos .box-item i,
@@ -251,6 +251,10 @@ footer .footer-content p {
   background-color: #47b1dc40;
   color: #1b7ca2;
   padding: 5px;
+}
+
+#mapid {
+  z-index: 0 !important;
 }
 
 p {
