@@ -195,25 +195,6 @@ footer{
     .footer-content{
         max-width:50rem;
         margin:0 auto;
-        .icons-box{
-            a{
-                border:1px solid #fff;
-                color:#fff;
-                border-radius:999px;
-                margin:0 .5rem;
-                display:inline-flex;
-                align-items:center;
-                justify-content:center;
-                width: 2.8rem;
-                aspect-ratio: 1;
-                
-                i,
-                svg{
-                    font-size:1.5rem;
-                }
-            }
-        }
-        
         h2{
             margin-bottom: 1.25rem;
         }
@@ -224,6 +205,27 @@ footer{
         }
     }
     
+}
+
+.icons-box{
+    margin-top: 2rem;
+    a{
+        border:1px solid #fff;
+        color:#fff;
+        border-radius:999px;
+        margin:0 .5rem;
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width: 2.8rem;
+        aspect-ratio: 1;
+        text-decoration: none;
+        
+        i,
+        svg{
+            font-size:1.5rem;
+        }
+    }
 }
 
 

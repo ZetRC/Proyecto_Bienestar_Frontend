@@ -180,7 +180,18 @@ footer .footer-content {
   max-width: 50rem;
   margin: 0 auto;
 }
-footer .footer-content .icons-box a {
+footer .footer-content h2 {
+  margin-bottom: 1.25rem;
+}
+footer .footer-content p {
+  margin-bottom: 1.25rem;
+  line-height: 2rem;
+}
+
+.icons-box {
+  margin-top: 2rem;
+}
+.icons-box a {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 999px;
@@ -190,17 +201,11 @@ footer .footer-content .icons-box a {
   justify-content: center;
   width: 2.8rem;
   aspect-ratio: 1;
+  text-decoration: none;
 }
-footer .footer-content .icons-box a i,
-footer .footer-content .icons-box a svg {
+.icons-box a i,
+.icons-box a svg {
   font-size: 1.5rem;
-}
-footer .footer-content h2 {
-  margin-bottom: 1.25rem;
-}
-footer .footer-content p {
-  margin-bottom: 1.25rem;
-  line-height: 2rem;
 }
 
 /* about */
