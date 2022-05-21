@@ -109,6 +109,7 @@ body {
 .video-container {
   position: relative;
   cursor: pointer;
+  color: #fff;
 }
 .video-container i,
 .video-container svg {
