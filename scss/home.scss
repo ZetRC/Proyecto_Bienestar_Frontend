@@ -14,22 +14,43 @@ body{
     min-width:100vw;
     min-width:100vh;
     box-sizing:border-box;
-    margin-top:70px;
+    margin-top:70px !important;
 }
 
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    height:70px;
+    height:80px;
     padding:0 1.5rem;
-    /* background:$main; */
     background-color: #fff;
     border-bottom: 1px solid #dcdcdc;
-    position:fixed;
+    position:fixed !important;
     top:0;
     left:0;
     right:0;
+    z-index:+999;
+
+        .logo-container{
+            display:flex;
+            align-items:center;
+            cursor:pointer;
+            text-decoration:none;
+            img{
+                width: 5rem;
+                margin-right:1rem;
+            }
+
+            h4{
+                margin:0 !important;
+                color: #606060;
+                text-decoration:none;
+                &:hover{
+                    text-decoration:none;
+                }
+            }
+        }
+
         ul{
             list-style:none;
             display: flex;
@@ -43,6 +64,31 @@ body{
                 }
             }
         }
+}
+
+.main-video-box{
+    img{
+        margin:0 auto;
+        display:block;
+    }
+}
+
+.carousel{
+    width: 900px;
+    margin:0 auto;
+
+    img{
+        height: 1280px !important;
+        filter: brightness(.75);
+        object-fit: contain;
+    }
+
+    .carousel-caption{
+        display:flex !Important;
+        align-items:center;
+        justify-content:center;
+        height: 100%;
+    }
 }
 
 .box-videos{
@@ -63,6 +109,13 @@ body{
 
 .box-foto{
     max-height: 35rem;
+    img{
+        max-width: 24rem;
+        border-radius: 34px;
+        margin: 0 auto; 
+        display: block;
+        box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    }
 }
 
 //generales
@@ -96,12 +149,44 @@ input{
     border-radius:8px;
 }
 
-
 footer{
-    background:$main;
+    /* background:#214e60; */
+    background:#1b7ca2;
     color:#fff;
     padding:2.5rem 0 ;
     text-align:center;
+    .footer-content{
+        max-width:50rem;
+        margin:0 auto;
+        .icons-box{
+            a{
+                border:1px solid #fff;
+                color:#fff;
+                border-radius:999px;
+                margin:0 .5rem;
+                display:inline-flex;
+                align-items:center;
+                justify-content:center;
+                width: 2.8rem;
+                aspect-ratio: 1;
+                
+                i,
+                svg{
+                    font-size:1.5rem;
+                }
+            }
+        }
+        
+        h2{
+            margin-bottom: 1.25rem;
+        }
+        
+        p{
+            margin-bottom:1.25rem;
+            line-height: 2rem;
+        }
+    }
+    
 }
 
 
@@ -166,4 +251,14 @@ footer{
         padding: 5px;
     }
     
+}
+
+//general
+
+p{
+    margin-bottom:.5rem !important;
+}
+
+.font-xxl{
+    font-size:3.5rem;
 }

@@ -22,7 +22,14 @@ $(document).ready(function(){
       }).addTo(mymap);
   
       var marker = L.marker([29.79, -98.42]).addTo(mymap);
-      marker.bindPopup("PROPERTY").openPopup();
+      marker.bindPopup("Centro Armonium -Villamarchante - Valencia").openPopup();
+    }
+
+    const initModal = () =>{
+      $("#open-cursos-btn").click(()=>{
+        $('#content-modal').modal()
+        console.log("why u do dis")
+      })
     }
   
     const selectGaleryImages = function () {  
@@ -30,8 +37,13 @@ $(document).ready(function(){
         window.open($(this)[0].src, '_blank')
       });
     }
+
+    const initVideos = function () {
+      
+    }
     
-    initMap()
+    /* initMap() */
+    initModal()
     /* selectGaleryImages() */
     /* scrollToMap() */
   

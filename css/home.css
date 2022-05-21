@@ -9,22 +9,40 @@ body {
   min-width: 100vw;
   min-width: 100vh;
   box-sizing: border-box;
-  margin-top: 70px;
+  margin-top: 70px !important;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
   padding: 0 1.5rem;
-  /* background:$main; */
   background-color: #fff;
   border-bottom: 1px solid #dcdcdc;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
+}
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar .logo-container img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+.navbar .logo-container h4 {
+  margin: 0 !important;
+  color: #606060;
+  text-decoration: none;
+}
+.navbar .logo-container h4:hover {
+  text-decoration: none;
 }
 .navbar ul {
   list-style: none;
@@ -38,6 +56,27 @@ body {
   /* color:$white; */
   color: #606060;
   text-decoration: none;
+}
+
+.main-video-box img {
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel {
+  width: 900px;
+  margin: 0 auto;
+}
+.carousel img {
+  height: 1280px !important;
+  filter: brightness(0.75);
+  object-fit: contain;
+}
+.carousel .carousel-caption {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .box-videos {
@@ -58,6 +97,13 @@ body {
 
 .box-foto {
   max-height: 35rem;
+}
+.box-foto img {
+  max-width: 24rem;
+  border-radius: 34px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 img {
@@ -90,10 +136,37 @@ input {
 }
 
 footer {
-  background: #47b1dc;
+  /* background:#214e60; */
+  background: #1b7ca2;
   color: #fff;
   padding: 2.5rem 0;
   text-align: center;
+}
+footer .footer-content {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+footer .footer-content .icons-box a {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 999px;
+  margin: 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  aspect-ratio: 1;
+}
+footer .footer-content .icons-box a i,
+footer .footer-content .icons-box a svg {
+  font-size: 1.5rem;
+}
+footer .footer-content h2 {
+  margin-bottom: 1.25rem;
+}
+footer .footer-content p {
+  margin-bottom: 1.25rem;
+  line-height: 2rem;
 }
 
 /* about */
@@ -144,6 +217,14 @@ footer {
   background-color: #47b1dc40;
   color: #1b7ca2;
   padding: 5px;
+}
+
+p {
+  margin-bottom: 0.5rem !important;
+}
+
+.font-xxl {
+  font-size: 3.5rem;
 }
 
 /*# sourceMappingURL=home.css.map */
