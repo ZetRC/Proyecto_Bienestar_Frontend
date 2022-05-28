@@ -8,7 +8,8 @@ $gray:#f5f5f5;
 body{
     padding:0;
     margin:0;
-    color:#606060 !important;
+    /* color:#606060 !important; */
+    color: #728186 !important;
     background:#fff;
     font-family:Arial, Helvetica, sans-serif;
     min-width:100vw;
@@ -23,13 +24,15 @@ body{
     align-items:center;
     height:80px;
     padding:0 1.5rem;
-    background-color: #fff;
+    //background-color: #fff;
+    background-color: #47b1dc;
     border-bottom: 1px solid #dcdcdc;
     position:fixed !important;
     top:0;
     left:0;
     right:0;
     z-index:+999;
+    color: #fff;
 
         .logo-container{
             display:flex;
@@ -43,8 +46,9 @@ body{
 
             h4{
                 margin:0 !important;
-                color: #606060;
                 text-decoration:none;
+                color:#fff;
+                font-weight:normal;
                 &:hover{
                     text-decoration:none;
                 }
@@ -54,14 +58,22 @@ body{
         ul{
             list-style:none;
             display: flex;
+            align-items:center;
             margin:0;
             li{
-                padding: 0 10px;
+                padding: 0 20px;
+                font-size: 1.05rem;
                 a{
                     /* color:$white; */
-                    color:#606060;
+                    color:#fff;
                     text-decoration: none;
                 }
+            }
+
+            .active{
+                background-color: #56ceff;
+                padding: .5rem 1.5rem;
+                border-radius: .25rem;
             }
         }
 }
@@ -124,7 +136,7 @@ body{
     position:relative;
     cursor: pointer;
     color:#fff;
-    i,
+    /* i,
     svg{
         position:absolute;
         top:50%;
@@ -134,10 +146,36 @@ body{
         pointer-events:none;
         z-index: +9;
         color:#fff;
+    } */
+
+    .video-content{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        font-size:3.5rem;
+        pointer-events:none;
+        z-index: +9;
+        color:#fff;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+
+        i,
+        svg{
+            margin-bottom:1rem;
+        }
+
+        h6{
+            font-size: 1.25rem;
+        }
+
     }
 
     img{
-        filter: brightness(.75);
+        filter: brightness(.65);
     }
 }
 
@@ -148,20 +186,8 @@ body{
 }
 
 img{
-    /* width: inherit; */
-    /* height:100%; */
     object-fit:cover;
     box-sizing:border-box;
-    &::before{
-        content: "lppppppppppppppppp";
-        width: 30px;
-        height: 30px;
-        background:red url("http://www.gentleface.com/i/free_toolbar_icons_16x16_black.png") no-repeat -30px -50px fixed;
-        top: 10px;
-        right: 5px;
-        position: absolute;
-        display: inline-block;
-    }
 }
 
 .section{
@@ -186,9 +212,27 @@ input{
     border-radius:8px;
 }
 
+.footer-images{
+    padding:3.5rem 1.5rem;
+    img{
+        max-height: 18rem;
+        display:block;
+        margin:0 auto;
+        transition:all .3s ease;
+        cursor:pointer;
+        margin:0 auto;
+        padding:1.5rem;
+        width:100%;
+        &:hover{
+            filter:brightness(1.25);
+
+        }
+    }
+}
+
 footer{
     /* background:#214e60; */
-    background:#1b7ca2;
+    background:#137096;
     color:#fff;
     padding:2.5rem 0 ;
     text-align:center;
@@ -303,5 +347,5 @@ p{
 }
 
 .font-xxl{
-    font-size:3.5rem;
+    font-size:2.5rem;
 }

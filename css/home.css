@@ -3,7 +3,8 @@
 body {
   padding: 0;
   margin: 0;
-  color: #606060 !important;
+  /* color:#606060 !important; */
+  color: #728186 !important;
   background: #fff;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 100vw;
@@ -18,13 +19,14 @@ body {
   align-items: center;
   height: 80px;
   padding: 0 1.5rem;
-  background-color: #fff;
+  background-color: #47b1dc;
   border-bottom: 1px solid #dcdcdc;
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
+  color: #fff;
 }
 .navbar .logo-container {
   display: flex;
@@ -38,8 +40,9 @@ body {
 }
 .navbar .logo-container h4 {
   margin: 0 !important;
-  color: #606060;
   text-decoration: none;
+  color: #fff;
+  font-weight: normal;
 }
 .navbar .logo-container h4:hover {
   text-decoration: none;
@@ -47,15 +50,22 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
 }
 .navbar ul li {
-  padding: 0 10px;
+  padding: 0 20px;
+  font-size: 1.05rem;
 }
 .navbar ul li a {
   /* color:$white; */
-  color: #606060;
+  color: #fff;
   text-decoration: none;
+}
+.navbar ul .active {
+  background-color: #56ceff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
 }
 
 .main-video-box img {
@@ -110,9 +120,19 @@ body {
   position: relative;
   cursor: pointer;
   color: #fff;
+  /* i,
+  svg{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      font-size:3.5rem;
+      pointer-events:none;
+      z-index: +9;
+      color:#fff;
+  } */
 }
-.video-container i,
-.video-container svg {
+.video-container .video-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -121,9 +141,21 @@ body {
   pointer-events: none;
   z-index: 9;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.video-container .video-content i,
+.video-container .video-content svg {
+  margin-bottom: 1rem;
+}
+.video-container .video-content h6 {
+  font-size: 1.25rem;
 }
 .video-container img {
-  filter: brightness(0.75);
+  filter: brightness(0.65);
 }
 
 .video-ratio img {
@@ -131,20 +163,8 @@ body {
 }
 
 img {
-  /* width: inherit; */
-  /* height:100%; */
   object-fit: cover;
   box-sizing: border-box;
-}
-img::before {
-  content: "lppppppppppppppppp";
-  width: 30px;
-  height: 30px;
-  background: red url("http://www.gentleface.com/i/free_toolbar_icons_16x16_black.png") no-repeat -30px -50px fixed;
-  top: 10px;
-  right: 5px;
-  position: absolute;
-  display: inline-block;
 }
 
 .section {
@@ -169,9 +189,26 @@ input {
   border-radius: 8px;
 }
 
+.footer-images {
+  padding: 3.5rem 1.5rem;
+}
+.footer-images img {
+  max-height: 18rem;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 100%;
+}
+.footer-images img:hover {
+  filter: brightness(1.25);
+}
+
 footer {
   /* background:#214e60; */
-  background: #1b7ca2;
+  background: #137096;
   color: #fff;
   padding: 2.5rem 0;
   text-align: center;
@@ -267,7 +304,7 @@ p {
 }
 
 .font-xxl {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=home.css.map */
