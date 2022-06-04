@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="container">
             <a class="logo-container" href="./index.html">
                 <img src="./images/logo.png" alt="">
@@ -34,7 +34,34 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container navbar-dark">
+            <a class="logo-container" href="./index.html">
+                <img src="./images/logo.png" alt="">
+                <h4 class="d-none d-md-block">SEYB - Seguridad Energética y Biológica</h4>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="ml-auto mr-0 navbar-nav mb-2 mb-lg-0">
+                <li class="active">
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./about.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="#/"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cursos</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- <div class="container-fluid bg-main py-5">
         
     </div> -->
@@ -78,14 +105,14 @@
         <button class="btn btn-light mx-auto d-block rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</button>
     </div> -->
     <div class="container box-foto section">
-        <div class="row align-items-center">
+        <div class="row align-items-center responsive-reverse-row">
             <div class="col-md-1"></div>
-            <div class="col-12 col-md-5">
-                <h2 class="pb-2">¿Quiere mejorar su salud?</h2>
-                <p class="pb-2">Esta incógnita ha sido buscada durante mucho tiempo, costando grandes inversiones. Aquí encontrara el camino para incrementar su vitalidad, con protocolos y productos, simples, rapidos y eficaces.</p>
-                <button class="btn btn-mainblue">Ver más</button>                
+            <div class="col-12 col-md-5 r-my-1">
+                <h2 class="pb-2 responsive-centered-text">¿Quiere mejorar su salud?</h2>
+                <p class="pb-2 responsive-centered-text">Esta incógnita ha sido buscada durante mucho tiempo, costando grandes inversiones. Aquí encontrara el camino para incrementar su vitalidad, con protocolos y productos, simples, rapidos y eficaces.</p>
+                <button class="btn btn-mainblue responsive-centered">Ver más</button>                
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 r-my-1">
                 <img src="./images/general-profile.webp" alt="">
             </div>
         </div>
@@ -100,7 +127,7 @@
                         <div class="video-content">
                             <i class="fa-solid fa-circle-play"></i>
                         </div>
-                        <img  class="w-100 yt-btn" src="https://img.youtube.com/vi/JsZrtoIL7Sc/0.jpg" data-youtube="JsZrtoIL7Sc"  alt="" >
+                        <img  class="w-100 yt-btn r-my-1" src="https://img.youtube.com/vi/JsZrtoIL7Sc/0.jpg" data-youtube="JsZrtoIL7Sc"  alt="" >
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
@@ -115,19 +142,19 @@
     <div class="container box-videos">
         <h2 class="text-center mb-5">Videos de:</h2>
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 r-my-1">
                 <div class="box-item">
                     <i class="fa-solid fa-circle-check"></i>
                     <h5>Armonización cuántica personal</h5>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 r-my-1">
                 <div class="box-item">
                     <i class="fa-solid fa-circle-check"></i>
                     <h5>Envío de energía a terceras personas y mascotas.</h5>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 r-my-1">
                 <div class="box-item">
                     <i class="fa-solid fa-circle-check"></i>
                     <h5>Regeneración cuántica de la visión.</h5>
@@ -245,7 +272,7 @@
                         <div class="video-content">
                             <i class="fa-solid fa-circle-play"></i>
                         </div>
-                        <img  class="w-100 yt-btn" src="https://img.youtube.com/vi/5SDEFnqB30E/0.jpg" data-youtube="5SDEFnqB30E"  alt="" >
+                        <img  class="w-100 yt-btn r-my-1" src="https://img.youtube.com/vi/5SDEFnqB30E/0.jpg" data-youtube="5SDEFnqB30E"  alt="" >
                     </div>
                 </div>
                 <div class="col-12 col-md-1"></div>
@@ -406,19 +433,19 @@
             <div class="row">
                 <div class="form-group col-12 col-md-4 mb-4">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control" placeholder="Ingresa tu nombre completo">
+                    <input type="text" class="form-control" placeholder="">
                 </div>
                 <div class="form-group col-12 col-md-4 mb-4">
                     <label for="">Correo</label>
-                    <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico">
+                    <input type="text" class="form-control" placeholder="">
                 </div>
                 <div class="form-group col-12 col-md-4 mb-4">
                     <label for="">Teléfono</label>
-                    <input type="text" class="form-control" placeholder="Ingresa tu número de teléfono">
+                    <input type="text" class="form-control" placeholder="">
                 </div>
                 <div class="form-group col-12 mb-4">
                     <label for="">Mensaje</label>
-                    <textarea class="form-control w-100" cols="30" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+                    <textarea class="form-control w-100" cols="30" rows="4" placeholder=""></textarea>
                 </div>
             </div>
             <input type="text" class="btn btn-mainblue" value="enviar">
@@ -446,7 +473,7 @@
     </div>
     <!-- videos modal -->
     <div class="modal fade close-video" id="videosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel"></h5>
@@ -474,9 +501,6 @@
                 </a>
                 <a href="">
                     <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
                 <a href="">
                     <i class="fa-brands fa-telegram"></i>

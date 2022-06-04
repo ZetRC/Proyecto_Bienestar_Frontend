@@ -12,7 +12,7 @@ $(document).ready(function(){
         myModal.show()
         var videoId = e.target.getAttribute("data-youtube");
         $('#youtube-video').html(
-          `<iframe id="yt-video" width="1100" height="700" src="https://www.youtube.com/embed/${videoId}?wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>`
+          `<iframe id="yt-video" style='width:100%;aspect-ratio:16/9;' src="https://www.youtube.com/embed/${videoId}?wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>`
         )
       })
 
