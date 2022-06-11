@@ -299,7 +299,7 @@ input{
         width:100%;
         &:hover{
             filter:brightness(1.25);
-
+            background-color: #fff;
         }
     }
 }
@@ -338,10 +338,21 @@ footer{
         width: 2.8rem;
         aspect-ratio: 1;
         text-decoration: none;
+        transition:all .3s ease-in-out;
         
         i,
         svg{
             font-size:1.5rem;
+            &:hover{
+                //color: $main;
+                color: #dcdcdc;
+                text-decoration:none;
+            }
+        }
+
+        &:hover{
+            color: #dcdcdc;
+            text-decoration:none;
         }
     }
 }
@@ -402,11 +413,13 @@ footer{
         opacity:.75;
     }
     
-    span,
-    span a{
+    span{
         background-color: #47b1dc40;
         color: #1b7ca2;
         padding: 5px;
+        a{
+            color: inherit;
+        }
     }
     
 }

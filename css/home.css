@@ -273,6 +273,7 @@ input {
 }
 .footer-images img:hover {
   filter: brightness(1.25);
+  background-color: #fff;
 }
 
 footer {
@@ -308,10 +309,20 @@ footer .footer-content p {
   width: 2.8rem;
   aspect-ratio: 1;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .icons-box a i,
 .icons-box a svg {
   font-size: 1.5rem;
+}
+.icons-box a i:hover,
+.icons-box a svg:hover {
+  color: #dcdcdc;
+  text-decoration: none;
+}
+.icons-box a:hover {
+  color: #dcdcdc;
+  text-decoration: none;
 }
 
 /* about */
@@ -358,11 +369,13 @@ footer .footer-content p {
 .contact-box p {
   opacity: 0.75;
 }
-.contact-box span,
-.contact-box span a {
+.contact-box span {
   background-color: #47b1dc40;
   color: #1b7ca2;
   padding: 5px;
+}
+.contact-box span a {
+  color: inherit;
 }
 
 #mapid {

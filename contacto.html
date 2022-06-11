@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="apple-touch-icon" href="./images/logo.png">
+</head>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg ">
@@ -68,7 +72,7 @@
             <div class="col-12 col-md-6">
                 <div class="contact-box">
                     <h5 class="bold">Llámanos</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, excepturi quod asperiores eos praesentium.</p>
+                    <p>No dudes en consultarnos por cualquier cuestión que quieras conocer</p>
                     <div>
                         <!-- <i class="fa-brands fa-whatsapp"></i> -->
                         <i class="fa-solid fa-phone"></i>
@@ -89,10 +93,10 @@
                 </div>
                 <div class="contact-box">
                     <h5 class="bold">Visitanos</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, excepturi quod asperiores eos </p>
+                    <p>Nos puedes encontrar en:</p>
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
-                        <span class="r-font-size">Centro Armonium -Villamarchante - Valencia</span>
+                        <span class="r-font-size" id="map-selector">Centro Armonium -Villamarchante - Valencia</span>
                     </div>
                 </div>
             </div>
@@ -113,10 +117,10 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img class="w-100" src="https://le-cdn.website-editor.net/s/28fc1226ecfc48ecbe7526e48da1a7c7/dms3rep/multi/opt/INFO-CURSOS-1-1920w.jpg?Expires=1654920355&Signature=Xib8l59wtvyYz0n9NpsqmltwBE6IzJdd73Vs3FvYTHN3KdFF4YhmV16QIK7pnxPUktBpObG-ulel~rS3TF1VBvXa4xJ6ryvXHs-335QBXXHwUhXHzJRZ0-2CUdphpLDoh3jRJ5SFG~Ty0sgOEaaSUuC7T657KkPwkthEDsWHmZ7Yq3r0E~WjIbhDzUiIh-axMZ0-0YlDjfwF~fXgDflHsH6aRo0lQoK2-HdWFuFr6z423WsagEcS6PGbwF51uNqmR6nCpqTFx~rDjNWvZcbgHDlao2PQXa5xvMyN0SCA~C4o5DJvufI9VETPN9cgVwKoNpqKY~4mVmCQlOasZtcOWA__&Key-Pair-Id=K2NXBXLF010TJW" alt="">
-                <img class="w-100" src="https://le-cdn.website-editor.net/s/28fc1226ecfc48ecbe7526e48da1a7c7/dms3rep/multi/opt/INFO-CURSOS-2-a2113d1c-1920w.jpg?Expires=1654920355&Signature=p4N~kD9JfYMItk4LdAldHkg7vTV3FQkVJdi5-LUXCV40LV~U6Lc3rinXCzCe5PhKOAUD8hSuRxnOFRiQCYDqdRqyEZpGP8qDKqmP-U~~EONHpE0iHWyVDY10kBJytXl8tnLWFhm50GA5i~C1QSiWo50hIXW2uUO1oYEi34J8xFmdvP~K2GmDscootb9vFKpMGDfDUtZ7gAO-BI76HJZApmgDXeEVHrubaPTP83SPwJiz6xAvdgH6V41lLjO5D46fLEIOGhv9cBHTQRUvIjyGhL9Hu2BMBll9HA3Dmpa81k9bMaVkE6mzxUOfvXnUxMOe2kiYm8y8xh3AN9unZfxNaw__&Key-Pair-Id=K2NXBXLF010TJW" alt="">
-                <img class="w-100" src="https://le-cdn.website-editor.net/s/28fc1226ecfc48ecbe7526e48da1a7c7/dms3rep/multi/opt/INFO-CURSOS-2-a2113d1c-1920w.jpg?Expires=1654920355&Signature=p4N~kD9JfYMItk4LdAldHkg7vTV3FQkVJdi5-LUXCV40LV~U6Lc3rinXCzCe5PhKOAUD8hSuRxnOFRiQCYDqdRqyEZpGP8qDKqmP-U~~EONHpE0iHWyVDY10kBJytXl8tnLWFhm50GA5i~C1QSiWo50hIXW2uUO1oYEi34J8xFmdvP~K2GmDscootb9vFKpMGDfDUtZ7gAO-BI76HJZApmgDXeEVHrubaPTP83SPwJiz6xAvdgH6V41lLjO5D46fLEIOGhv9cBHTQRUvIjyGhL9Hu2BMBll9HA3Dmpa81k9bMaVkE6mzxUOfvXnUxMOe2kiYm8y8xh3AN9unZfxNaw__&Key-Pair-Id=K2NXBXLF010TJW" alt="">
-                <img class="w-100" src="https://le-cdn.website-editor.net/s/28fc1226ecfc48ecbe7526e48da1a7c7/dms3rep/multi/opt/INFO-CURSOS-2-1cb4e4bf-1920w.jpg?Expires=1654920355&Signature=q-x5VqmVAbwB7ydUFmTccIEAFAIhS2R3M7vi8HHqFNVF3sZnPSWG~Lm3bE1d5LRX2i7poPgSTC5FQ0sUfAP4GWhUXecKmzFs4FOpx1Hyiu2lGnmdeni3xow91wth6Qc3XNp5xHMszT9Bg7BHMOqc9aeXfWYzXqSaw2L7Cn~wlQem4XGokAycd0g61r21d2ECQ0ABIR1lOrzKpNSFBZxare2WzKx5LV03JnXuU9CfS0UTv4tCZ1xwGJNoCbLP32bs3HDYiMdC3Aos~5lqInRX6OA5NiFKedsJS-u7DJDwn3CiSC-CzClYRucWsq-7nKoErNWiS1-pRelvVbkqvaKVAw__&Key-Pair-Id=K2NXBXLF010TJW" alt="">
+                <img class="w-100" src="./images/cursos-1.webp" alt="">
+                <img class="w-100" src="./images/cursos-2.webp" alt="">
+                <img class="w-100" src="./images/cursos-3.webp" alt="">
+                <img class="w-100" src="./images/cursos-4.webp" alt="">
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-mainblue" data-bs-dismiss="modal">Cerrar</button>
@@ -128,7 +132,7 @@
     <footer>
         <div class="footer-content">
             <h2>SEYB - Seguridad Energética y Biológica</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis et nobis quaerat dolorum. Ullam blanditiis quia beatae illum, totam fuga ipsam sunt quasi est excepturi, quos eius, reiciendis quaerat. Quidem ipsa perferendis ex rem.</p>
+            <p>Síguenos en nuestras redes sociales:</p>
             <div class="icons-box">
                 <a href="https://m.facebook.com/SEYB-107865124196399/">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -136,7 +140,7 @@
                 <a href="https://www.youtube.com/channel/UCPjPClNzkJq8Ly_IdEh5XFA">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="">
+                <a href="https://t.me/+GGCWQl_i-W0wYjkx">
                     <i class="fa-brands fa-telegram"></i>
                 </a>
                 <a href="mailto:seguridadenergeticaybiologica@gmail.com">
